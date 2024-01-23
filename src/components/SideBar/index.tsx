@@ -1,4 +1,3 @@
-import React from "react";
 import { InstaLogo, SideBarDiv, SideButtonDiv, SideButtonImg, SideButtonText, SidePages } from "./style";
 
 import Instagram from '../../assets/instagram.svg';
@@ -41,7 +40,7 @@ export default function SideBar() {
                 }
 
                 <SideButtonDiv>
-                    <SideButtonImg style={{height: '3vh', borderRadius: '50%'}} src={homi}/>
+                    <SideButtonImg style={{width: '3vh', height: '3vh', borderRadius: '50%'}} src={homi}/>
                     <SideButtonText>Perfil</SideButtonText>
                 </SideButtonDiv>
             </SidePages>

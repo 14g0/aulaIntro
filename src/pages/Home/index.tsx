@@ -1,6 +1,7 @@
 import SideBar from "../../components/SideBar";
 import Stories from "../../components/Stories";
-import { HomeDiv, Sugestoes, Timeline } from "./style";
+import Sugestoes from "../../components/Sugestoes";
+import { HomeDiv, Timeline } from "./style";
 
 export default function Home() {
     return (

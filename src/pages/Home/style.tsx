@@ -11,11 +11,7 @@ export const HomeDiv = styled.div `
 export const Timeline = styled.div `
     display: flex;
     flex-direction: column;
-    width: 55%;
-    background-color: green;
-`;
+    width: 50%;
 
-export const Sugestoes = styled.div `
-    display: flex;
-    flex-direction: column;
+    overflow-y: auto;
 `;
