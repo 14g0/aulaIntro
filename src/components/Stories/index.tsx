@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-import { LeftArrow, RightArrow, StoriesDiv, UserName, UserPic, UserPicDiv, UserStoriesDiv } from './style';
+import { LeftArrow, RightArrow, StoriesDiv, UserName, UserPic, UserPicDiv,
+    UserStoriesDiv } from './style';
 
 import Seta from '../../assets/rightArrow.svg';
 
@@ -10,10 +11,6 @@ export type UserStoriesData = {
 }
 
 export default function Stories({usuarios}: {usuarios: Array<UserStoriesData>}) {
-    /*
-        Tem que pegar o tamanho de cada story e da div dos stories para tirar
-        retirar o tamanho certo para esconder a seta da direita.
-    */
 
     const scrollLenght = 78.788;
     const [scroll, setScroll] = useState<number>(0);
@@ -23,7 +20,6 @@ export default function Stories({usuarios}: {usuarios: Array<UserStoriesData>}) 
         if(stories) {
             stories.scrollTo((scroll - scrollLenght), 0);
             setScroll(scroll - scrollLenght);
-            console.log(scroll);
         }
     }
     
@@ -32,7 +28,6 @@ export default function Stories({usuarios}: {usuarios: Array<UserStoriesData>}) 
         if(stories) {
             stories.scrollTo((scroll + scrollLenght), 0);
             setScroll(scroll + scrollLenght);
-            console.log(scroll);
         }
     }
 
@@ -61,6 +56,10 @@ export default function Stories({usuarios}: {usuarios: Array<UserStoriesData>}) 
             <LeftArrow src={Seta} onClick={scrollLeft}
             style={{display: scroll <= 0? 'none':'flex'}}/>
 
+    {/*
+        Tem que pegar o tamanho de cada story e da div dos stories para tirar
+        retirar o tamanho certo para esconder a seta da direita.
+    */}
             <RightArrow src={Seta} onClick={scrollRight}
             style={{display: scroll === ((usuarios.length - 8)*scrollLenght)? 'none':'flex'}}/>
         </StoriesDiv>
