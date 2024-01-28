@@ -29,9 +29,9 @@ export default function SideBar() {
 
             <SidePages>
                 {
-                    Botoes.map((botao) => {
+                    Botoes.map((botao, index) => {
                         return (
-                            <SideButtonDiv>
+                            <SideButtonDiv key={index}>
                                 <SideButtonImg src={botao[0]}/>
                                 <SideButtonText>{botao[1]}</SideButtonText>
                             </SideButtonDiv>
@@ -40,7 +40,8 @@ export default function SideBar() {
                 }
 
                 <SideButtonDiv>
-                    <SideButtonImg style={{width: '3vh', height: '3vh', borderRadius: '50%'}} src={homi}/>
+                    <SideButtonImg src={homi} style={{ objectFit: 'cover',
+                        width: '3vh', height: '3vh', borderRadius: '50%'}}/>
                     <SideButtonText>Perfil</SideButtonText>
                 </SideButtonDiv>
             </SidePages>

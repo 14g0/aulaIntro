@@ -2,19 +2,17 @@ import styled from "styled-components";
 
 export const SideBarDiv = styled.div `
     display: grid;
-    grid-template-rows: 15% 60% 15%;
+    grid-template-rows: 15% 66% 15%;
     height: 100%;
-    width: 15%;
+    width: 18%;
 
-    padding: 0 0 0 3%;
-
-    border-right: 1px solid #6b6b6b;
+    border-right: 1px solid #6b6b6b56;
 `;
 
 export const InstaLogo = styled.img `
-    width: 60%;
+    width: 45%;
+    margin: 0 0 0 13.6%;
     align-self: center;
-    margin: 0 0 10% 0;
 `;
 
 /*----------------------------------------------------------------------------*/
@@ -27,18 +25,26 @@ export const SidePages = styled.div `
 
 export const SideButtonDiv = styled.div `
     display: grid;
-    grid-template-columns: 9% auto;
-    grid-column-gap: 5%;
+    grid-template-columns: 13% auto;
+    grid-column-gap: 8%;
+    width: 80%;
+
     align-items: center;
+
+    margin: 0 0 0 8.6%;
+    padding: 5% 0 5% 5%;
+
+    border-radius: 7px;
+    :hover { background-color: #1c1c1c; }
 `;
 
 export const SideButtonImg = styled.img `
-    width: 100%;
+    width: 90%;
 `;
 
 export const SideButtonText = styled.p `
+    font-size: 1.2vw;
     color: white;
-    font-weight: 500;
 `;
 
 /*----------------------------------------------------------------------------*/

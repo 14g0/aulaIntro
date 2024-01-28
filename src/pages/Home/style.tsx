@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomeDiv = styled.div `
     display: inline-flex;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     background-color: black;
@@ -11,7 +11,9 @@ export const HomeDiv = styled.div `
 export const Timeline = styled.div `
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 52%;
 
-    overflow-y: auto;
+    position: relative;
+
+    align-items: center;
 `;
